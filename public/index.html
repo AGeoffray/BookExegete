@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Book Exegete</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+</head>
+<style>
+    body {
+        background: url('https://i.imgur.com/hAK9uHc.jpg');
+        /* background-color: #F2F6D0; */
+        font-family: 'quicksand', sans-serif
+    }
+    #book {
+        margin-top: -50px;
+    }
+    #mainHead {
+        color: rgb(236, 181, 233);
+        text-shadow: 2px 2px blueviolet;
+        font-size: 40px;
+        padding-top: 0%;
+        margin-top: 0%;
+    }
+
+    #miniHead {
+        color: rgb(247, 210, 210);
+        text-shadow: 2px 2px blueviolet;
+        font-size: 25px;
+        padding-top: 0%;
+        margin-top: 0%;
+    }
+
+    #instructionDiv {
+        color: pink;
+        text-shadow: 2px 2px rgb(131, 78, 87);
+        margin-bottom: 5%;
+    }
+
+    #wrapper {
+        width: 99%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 3%;
+    }
+
+    #books {
+        float: left;
+        /* display: inline-block; */
+        overflow: auto;
+        width: 45%;
+        margin-left: 5%;
+        height: 700px;
+        padding: 3%;
+        background: rgb(212, 236, 245);
+        border: 5px ridge pink;
+    }
+
+    #notes {
+        float: left;
+        width: 30%;
+        padding: 3%;
+        background: rgb(212, 236, 245);
+        border: 5px ridge pink;
+        margin-left: 6%;
+    }
+
+    textarea,
+    input {
+        display: block;
+        /* width: 100%; */
+        background-color: rgb(253, 230, 252);
+    }
+
+    /* <!-- Here is the title area for user comments --> */
+    input {
+        height: 36px;
+        font-size: 24px;
+        border: 2px ridge pink;
+        width: 95%;
+    }
+
+    /* <!-- And here is the actual comment area from the user --> */
+    textarea {
+        height: 200px;
+        font-size: 18px;
+        color: rgb(10, 69, 88);
+        border: 2px ridge pink;
+        width: 95%;
+    }
+
+    #commentbtn {
+        background: rgb(161, 87, 161);
+        color: rgb(227, 227, 250);
+        border: 2px ridge pink;
+    }
+
+    #commentbtn:hover {
+        background: rgb(66, 81, 87);
+        color: rgb(205, 205, 209);
+    }
+
+    #commentHeader {
+        color: rgb(76, 8, 107);
+    }
+
+    #bookHeader {
+        color: rgb(87, 18, 70);
+        text-shadow: 1px 1px pink;
+    }
+
+    .link {
+        color: rgb(165, 44, 64);
+        text-shadow:1px  blue;
+        font-size: 12px;
+    }
+    .allbooks {
+        border: 1px ridge pink;
+        padding: 7px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 3px;
+    }
+    .bookTitle {
+        font-size: 20px;
+        color: rgb(66, 12, 80);
+        margin-bottom: 1px;
+
+    }
+</style>
+
+
+<body>
+    <div id="wrapper">
+
+        <center>
+            <img src='https://i.imgur.com/9WByTmV.png' id='book' height='100px'>
+            <h1 id='mainHead'>Book Exegete</h1>
+            <h2 id='miniHead'>A safe place to share discussions and ideas with other avid readers.</h2>
+            <h3 id='instructionDiv'>Click on a book title to read relevant comments or leave a comment of your own</h3>
+        </center>
+
+        <div id="books"></div>
+
+        <center>
+            <div id="notes"></div>
+            <img src='https://i.imgur.com/W5sF6Fu.png' width=20%>
+        </center>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
